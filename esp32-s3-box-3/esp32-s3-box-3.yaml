@@ -788,9 +788,9 @@ display:
         lambda: |-
           it.fill(id(idle_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_idle), ImageAlign::CENTER);
-          it.strftime(it.get_width() / 2, (it.get_height() / 2), id(font_clock_big), Color::ORANGE_RED, TextAlign::TOP_CENTER, "%H:%M", id(esptime).now());
           id(draw_timer_timeline).execute();
           id(draw_active_timer_widget).execute();
+          it.strftime(it.get_width() / 2, (it.get_height() / 2), id(font_clock_big), Color::ORANGE_RED, TextAlign::TOP_CENTER, "%H:%M", id(esptime).now());
       - id: listening_page
         lambda: |-
           it.fill(id(listening_color));
