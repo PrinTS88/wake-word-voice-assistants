@@ -782,7 +782,7 @@ display:
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_idle), ImageAlign::CENTER);
           id(draw_timer_timeline).execute();
           id(draw_active_timer_widget).execute();
-          it.strftime(it.get_width() - 10, 5, id(font_request), TextAlign::TOP_RIGHT, "%H:%M", id(esptime).now());
+          it.strftime(it.get_width() / 2, 5, id(font_timer), TextAlign::TOP_CENTER, "%H:%M", id(esptime).now());
       - id: listening_page
         lambda: |-
           it.fill(id(listening_color));
