@@ -717,9 +717,9 @@ font:
   - file:
       type: gfonts
       family: ${font_family}
-      weight: 700
+      weight: 800
     id: font_clock_big
-    size: 40
+    size: 50
     glyphsets:
       - ${font_glyphsets}
 
