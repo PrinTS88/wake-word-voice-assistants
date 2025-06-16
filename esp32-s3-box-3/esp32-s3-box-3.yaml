@@ -782,7 +782,7 @@ display:
     reset_pin:
       number: 48
       inverted: true
-    update_interval: never
+    update_interval: 30s
     pages:
       - id: idle_page
         lambda: |-
