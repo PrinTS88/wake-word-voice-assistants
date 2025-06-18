@@ -719,7 +719,7 @@ font:
       family: ${font_family}
       weight: 800
     id: font_clock_big
-    size: 70
+    size: 100
     glyphsets:
       - ${font_glyphsets}
 
@@ -790,7 +790,7 @@ display:
           // it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_idle), ImageAlign::CENTER);
           id(draw_timer_timeline).execute();
           id(draw_active_timer_widget).execute();
-          it.strftime(it.get_width() / 2, (it.get_height() / 2), id(font_clock_big), TextAlign::CENTER, "%H:%M", id(esptime).now());
+          it.strftime(it.get_width() / 2, (it.get_height() / 2), id(font_clock_big), Color(255, 20, 147), TextAlign::CENTER, "%H:%M", id(esptime).now());
       - id: listening_page
         lambda: |-
           it.fill(id(listening_color));
